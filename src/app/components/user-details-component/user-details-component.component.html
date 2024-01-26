@@ -1,0 +1,10 @@
+
+<div class="card">
+  <div class="spinner" [hidden]="user.id!==0"></div>
+<div [hidden]="user.id==0">
+  <img [src]="user.avatar" [alt]="user.first_name + ' ' + user.last_name">
+  <h2>{{ user.first_name }} {{ user.last_name }}</h2>
+  <p>ID: {{ user.id }}</p>
+  <p>ID: {{ user.email }}</p>
+</div></div>
+<button (click)="goBack()">Back</button>
